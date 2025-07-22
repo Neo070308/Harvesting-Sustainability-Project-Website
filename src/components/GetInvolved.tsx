@@ -100,7 +100,27 @@ const GetInvolved = () => {
                     <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
                       {way.description}
                     </p>
-                    <Button variant="outline" size="sm" className="group">
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="group"
+                      onClick={() => {
+                        if (way.title === "Schedule a Harvest") {
+                          document.getElementById('harvest-form')?.scrollIntoView({ behavior: 'smooth' });
+                        } else if (way.title === "Become a Harvester" || way.title === "Partner with Us") {
+                          window.location.href = '/volunteer';
+                        } else if (way.title === "Spread the Word") {
+                          const text = "Check out Harvesting Sustainability - turning backyard surplus into community support!";
+                          const url = window.location.origin;
+                          if (navigator.share) {
+                            navigator.share({ title: 'Harvesting Sustainability', text, url });
+                          } else {
+                            navigator.clipboard.writeText(`${text} ${url}`);
+                            alert('Link copied to clipboard!');
+                          }
+                        }
+                      }}
+                    >
                       {way.action}
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </Button>
@@ -138,7 +158,12 @@ const GetInvolved = () => {
             </div>
 
             <div className="text-center">
-              <Button variant="cta" size="lg" className="group">
+              <Button 
+                variant="cta" 
+                size="lg" 
+                className="group"
+                onClick={() => window.location.href = '/volunteer'}
+              >
                 Apply to Volunteer
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>

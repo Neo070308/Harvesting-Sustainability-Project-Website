@@ -108,7 +108,16 @@ const Contact = () => {
                         rows={5}
                       />
                     </div>
-                    <Button variant="hero" size="lg" className="w-full">
+                    <Button 
+                      variant="hero" 
+                      size="lg" 
+                      className="w-full"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        // Here you would typically handle form submission
+                        alert('Thank you for your message! We will get back to you soon.');
+                      }}
+                    >
                       Send Message
                     </Button>
                   </form>

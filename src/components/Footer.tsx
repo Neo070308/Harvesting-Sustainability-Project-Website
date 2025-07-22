@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { Instagram, Mail, Heart, Leaf } from "lucide-react";
+import { Link } from "react-router-dom";
 import logoIcon from "@/assets/logo-icon.png";
 
 const Footer = () => {
@@ -8,22 +9,22 @@ const Footer = () => {
 
   const footerLinks = {
     about: [
-      { name: "Our Mission", href: "/mission" },
+      { name: "About Us", href: "/about" },
       { name: "How It Works", href: "/how-it-works" },
       { name: "Meet the Team", href: "/team" },
-      { name: "Our Impact", href: "/impact" }
+      { name: "Blog", href: "/blog" }
     ],
     getInvolved: [
-      { name: "Schedule Harvest", href: "#harvest-form" },
       { name: "Volunteer", href: "/volunteer" },
-      { name: "Partner With Us", href: "/partner" },
-      { name: "Donate", href: "/donate" }
+      { name: "Contact Us", href: "/contact" },
+      { name: "Schedule Harvest", href: "/#harvest-form" },
+      { name: "Get Involved", href: "/#get-involved" }
     ],
     resources: [
-      { name: "Blog", href: "/blog" },
-      { name: "FAQ", href: "/faq" },
+      { name: "Home", href: "/" },
+      { name: "About", href: "/about" },
       { name: "Contact", href: "/contact" },
-      { name: "Privacy Policy", href: "/privacy" }
+      { name: "How It Works", href: "/how-it-works" }
     ]
   };
 
@@ -82,12 +83,12 @@ const Footer = () => {
               <ul className="space-y-3">
                 {footerLinks.about.map((link) => (
                   <li key={link.name}>
-                    <a 
-                      href={link.href} 
+                    <Link 
+                      to={link.href} 
                       className="text-muted-foreground hover:text-primary transition-colors text-sm"
                     >
                       {link.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>
@@ -98,12 +99,21 @@ const Footer = () => {
               <ul className="space-y-3">
                 {footerLinks.getInvolved.map((link) => (
                   <li key={link.name}>
-                    <a 
-                      href={link.href} 
-                      className="text-muted-foreground hover:text-primary transition-colors text-sm"
-                    >
-                      {link.name}
-                    </a>
+                    {link.href.startsWith('#') ? (
+                      <a 
+                        href={link.href} 
+                        className="text-muted-foreground hover:text-primary transition-colors text-sm"
+                      >
+                        {link.name}
+                      </a>
+                    ) : (
+                      <Link 
+                        to={link.href} 
+                        className="text-muted-foreground hover:text-primary transition-colors text-sm"
+                      >
+                        {link.name}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -114,12 +124,12 @@ const Footer = () => {
               <ul className="space-y-3">
                 {footerLinks.resources.map((link) => (
                   <li key={link.name}>
-                    <a 
-                      href={link.href} 
+                    <Link 
+                      to={link.href} 
                       className="text-muted-foreground hover:text-primary transition-colors text-sm"
                     >
                       {link.name}
-                    </a>
+                    </Link>
                   </li>
                 ))}
               </ul>

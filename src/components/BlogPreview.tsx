@@ -95,7 +95,12 @@ const BlogPreview = () => {
                       </div>
                     </div>
                     
-                    <Button variant="ghost" size="sm" className="group/btn p-0 h-auto">
+                    <Button 
+                      variant="ghost" 
+                      size="sm" 
+                      className="group/btn p-0 h-auto"
+                      onClick={() => window.location.href = '/blog'}
+                    >
                       <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                     </Button>
                   </div>
@@ -105,7 +110,12 @@ const BlogPreview = () => {
           </div>
 
           <div className="text-center">
-            <Button variant="outline" size="lg" className="group">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="group"
+              onClick={() => window.location.href = '/blog'}
+            >
               View All Posts
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Button>
@@ -128,7 +138,12 @@ const BlogPreview = () => {
                   placeholder="Enter your email"
                   className="flex-1 px-4 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
                 />
-                <Button variant="cta">
+                <Button 
+                  variant="cta"
+                  onClick={() => {
+                    alert('Thank you for subscribing! You will receive updates about our blog posts.');
+                  }}
+                >
                   Subscribe
                 </Button>
               </div>

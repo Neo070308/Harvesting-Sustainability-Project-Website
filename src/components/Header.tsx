@@ -11,6 +11,7 @@ const Header = () => {
   const menuItems = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
+    { name: "Team", href: "/team" },
     { name: "How It Works", href: "/how-it-works" },
     { name: "Blog", href: "/blog" },
     { name: "Get Involved", href: "/volunteer" },
@@ -47,7 +48,17 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="cta" size="sm">
+            <Button 
+              variant="cta" 
+              size="sm" 
+              onClick={() => {
+                if (window.location.pathname === '/') {
+                  document.getElementById('harvest-form')?.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  window.location.href = '/#harvest-form';
+                }
+              }}
+            >
               Schedule Harvest
             </Button>
           </div>
@@ -81,7 +92,21 @@ const Header = () => {
               </Link>
             ))}
             <div className="px-3 pt-2">
-              <Button variant="cta" size="sm" className="w-full">
+              <Button 
+                variant="cta" 
+                size="sm" 
+                className="w-full"
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  if (window.location.pathname === '/') {
+                    setTimeout(() => {
+                      document.getElementById('harvest-form')?.scrollIntoView({ behavior: 'smooth' });
+                    }, 100);
+                  } else {
+                    window.location.href = '/#harvest-form';
+                  }
+                }}
+              >
                 Schedule Harvest
               </Button>
             </div>

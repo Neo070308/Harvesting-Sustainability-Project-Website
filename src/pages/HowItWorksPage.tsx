@@ -21,7 +21,12 @@ const HowItWorksPage = () => {
         </div>
         <HowItWorks />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center mt-12">
-          <Button variant="hero" size="lg" className="group">
+          <Button 
+            variant="hero" 
+            size="lg" 
+            className="group"
+            onClick={() => window.location.href = '/#harvest-form'}
+          >
             Schedule Your First Harvest
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Button>
