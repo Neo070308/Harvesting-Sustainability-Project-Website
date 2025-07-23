@@ -1,9 +1,11 @@
+import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Star, Quote } from "lucide-react";
+import ReviewForm from "@/components/ReviewForm";
 
 const Testimonials = () => {
-  const testimonials = [
+  const [testimonials, setTestimonials] = useState([
     {
       name: "Maria González",
       role: "Home Gardener",
@@ -28,7 +30,15 @@ const Testimonials = () => {
       rating: 5,
       avatar: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=100&h=100&fit=crop&crop=face"
     }
-  ];
+  ]);
+
+  const addReview = (newReview: any) => {
+    const reviewWithAvatar = {
+      ...newReview,
+      avatar: `https://images.unsplash.com/photo-${Math.random() > 0.5 ? '1494790108755-2616b612b786' : '1472099645785-5658abf4ff4e'}?w=100&h=100&fit=crop&crop=face`
+    };
+    setTestimonials([reviewWithAvatar, ...testimonials]);
+  };
 
   const renderStars = (rating: number) => {
     return Array.from({ length: 5 }, (_, i) => (
@@ -99,9 +109,12 @@ const Testimonials = () => {
                 We'd love to hear how Harvesting Sustainability has impacted you or your community. 
                 Your story could inspire others to join our mission!
               </p>
-              <Badge variant="secondary" className="cursor-pointer hover:bg-secondary/80 transition-colors">
-                📧 Share Your Story: mobile.harvesters650@gmail.com
-              </Badge>
+              <div className="flex items-center justify-center gap-4">
+                <ReviewForm onAddReview={addReview} />
+                <Badge variant="secondary" className="cursor-pointer hover:bg-secondary/80 transition-colors">
+                  📧 Email: mobile.harvesters650@gmail.com
+                </Badge>
+              </div>
             </div>
           </div>
         </div>

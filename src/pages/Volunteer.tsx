@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import GetInvolved from "@/components/GetInvolved";
+import VolunteerForm from "@/components/VolunteerForm";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Heart, Users, Clock, Award } from "lucide-react";
@@ -61,6 +62,7 @@ const Volunteer = () => {
           </div>
         </div>
         
+        <VolunteerForm />
         <GetInvolved />
       </main>
       <Footer />

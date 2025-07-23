@@ -106,17 +106,35 @@ const GetInvolved = () => {
                       className="group"
                       onClick={() => {
                         if (way.title === "Schedule a Harvest") {
-                          document.getElementById('harvest-form')?.scrollIntoView({ behavior: 'smooth' });
-                        } else if (way.title === "Become a Harvester" || way.title === "Partner with Us") {
-                          window.location.href = '/volunteer';
+                          window.location.href = '/#harvest-form';
+                        } else if (way.title === "Become a Harvester") {
+                          window.location.href = '/volunteer#volunteer-form';
+                        } else if (way.title === "Partner with Us") {
+                          window.location.href = 'mailto:mobile.harvesters650@gmail.com?subject=Partnership Inquiry&body=Hello! I am interested in partnering with Harvesting Sustainability.';
                         } else if (way.title === "Spread the Word") {
                           const text = "Check out Harvesting Sustainability - turning backyard surplus into community support!";
                           const url = window.location.origin;
+                          
+                          // Import and trigger flyer download
+                          import('/src/assets/mobile-harvesters-flyer.png').then((module) => {
+                            const link = document.createElement('a');
+                            link.href = module.default;
+                            link.download = 'mobile-harvesters-flyer.png';
+                            document.body.appendChild(link);
+                            link.click();
+                            document.body.removeChild(link);
+                          });
+                          
+                          // Also share the website
                           if (navigator.share) {
-                            navigator.share({ title: 'Harvesting Sustainability', text, url });
+                            navigator.share({ 
+                              title: 'Harvesting Sustainability', 
+                              text: `${text} ${url}\n\nDownload our flyer to share with others!`,
+                              url 
+                            });
                           } else {
                             navigator.clipboard.writeText(`${text} ${url}`);
-                            alert('Link copied to clipboard!');
+                            alert('Flyer downloaded! Website link copied to clipboard to share!');
                           }
                         }
                       }}

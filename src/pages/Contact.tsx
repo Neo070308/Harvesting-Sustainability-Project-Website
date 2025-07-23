@@ -12,25 +12,25 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      content: "hello@harvestingsustainability.org",
+      content: "mobile.harvesters650@gmail.com",
       description: "Send us a message anytime"
     },
     {
       icon: Phone,
       title: "Phone",
-      content: "(555) 123-4567",
+      content: "650-832-3735",
       description: "Call us during business hours"
     },
     {
       icon: MapPin,
       title: "Location",
-      content: "Serving Greater Metro Area",
-      description: "We come to you!"
+      content: "Mountain View/Los Altos Area",
+      description: "Soon expanding to other cities!"
     },
     {
       icon: Clock,
       title: "Hours",
-      content: "Mon-Fri: 9AM-5PM",
+      content: "Mon-Sun: 9AM-5PM",
       description: "Weekend harvests available"
     }
   ];
