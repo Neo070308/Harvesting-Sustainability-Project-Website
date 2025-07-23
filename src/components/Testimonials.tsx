@@ -5,32 +5,7 @@ import { Star, Quote } from "lucide-react";
 import ReviewForm from "@/components/ReviewForm";
 
 const Testimonials = () => {
-  const [testimonials, setTestimonials] = useState([
-    {
-      name: "Maria González",
-      role: "Home Gardener",
-      location: "Mountain View, CA",
-      content: "I used to feel guilty throwing away excess tomatoes and zucchini from my garden. Now I know they're feeding families in need. The volunteers are wonderful and made the whole process so easy!",
-      rating: 5,
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face"
-    },
-    {
-      name: "David Chen",
-      role: "Volunteer Harvester",
-      location: "Palo Alto, CA",
-      content: "Being part of this initiative has been incredibly rewarding. Every weekend, I help collect fresh produce and see the direct impact on our community. It's amazing how much difference we can make together.",
-      rating: 5,
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
-    },
-    {
-      name: "Hope's Corner Staff",
-      role: "Partner Organization",
-      location: "Mountain View, CA",
-      content: "The fresh produce from Harvesting Sustainability has been a game-changer for our kitchen. Our guests love the variety and quality of fruits and vegetables. This partnership truly makes a difference.",
-      rating: 5,
-      avatar: "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=100&h=100&fit=crop&crop=face"
-    }
-  ]);
+  const [testimonials, setTestimonials] = useState([]);
 
   const addReview = (newReview: any) => {
     const reviewWithAvatar = {

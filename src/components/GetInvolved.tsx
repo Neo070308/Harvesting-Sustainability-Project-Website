@@ -112,29 +112,22 @@ const GetInvolved = () => {
                         } else if (way.title === "Partner with Us") {
                           window.location.href = 'mailto:mobile.harvesters650@gmail.com?subject=Partnership Inquiry&body=Hello! I am interested in partnering with Harvesting Sustainability.';
                         } else if (way.title === "Spread the Word") {
+                          // Open the Canva flyer link
+                          window.open('https://www.canva.com/design/DAGp-8Tn1tA/8bEEja8tZfz74qWEa-OcVg/view?utm_content=DAGp-8Tn1tA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb155b785fe', '_blank');
+                          
+                          // Also share the website
                           const text = "Check out Harvesting Sustainability - turning backyard surplus into community support!";
                           const url = window.location.origin;
                           
-                          // Import and trigger flyer download
-                          import('/src/assets/mobile-harvesters-flyer.png').then((module) => {
-                            const link = document.createElement('a');
-                            link.href = module.default;
-                            link.download = 'mobile-harvesters-flyer.png';
-                            document.body.appendChild(link);
-                            link.click();
-                            document.body.removeChild(link);
-                          });
-                          
-                          // Also share the website
                           if (navigator.share) {
                             navigator.share({ 
                               title: 'Harvesting Sustainability', 
-                              text: `${text} ${url}\n\nDownload our flyer to share with others!`,
+                              text: `${text} ${url}\n\nCheck out our flyer for more info!`,
                               url 
                             });
                           } else {
                             navigator.clipboard.writeText(`${text} ${url}`);
-                            alert('Flyer downloaded! Website link copied to clipboard to share!');
+                            alert('Flyer opened in new tab! Website link copied to clipboard to share!');
                           }
                         }
                       }}
