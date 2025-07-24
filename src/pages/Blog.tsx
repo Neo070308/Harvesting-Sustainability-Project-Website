@@ -5,26 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 const Blog = () => {
-  const additionalPosts = [
-    {
-      title: "Growing Your First Vegetable Garden",
-      excerpt: "A beginner's guide to starting a productive home garden that can feed your family and help the community.",
-      date: "December 10, 2024",
-      category: "Gardening Tips"
-    },
-    {
-      title: "The Science Behind Food Waste",
-      excerpt: "Understanding the environmental impact of food waste and how small actions can make a big difference.",
-      date: "December 5, 2024", 
-      category: "Sustainability"
-    },
-    {
-      title: "Volunteer Spotlight: Meet Sarah",
-      excerpt: "Learn about one of our dedicated Mobile Harvesters and how she's making a difference in the community.",
-      date: "November 28, 2024",
-      category: "Community"
-    }
-  ];
+  const additionalPosts = [];
 
   return (
     <div className="min-h-screen bg-background">

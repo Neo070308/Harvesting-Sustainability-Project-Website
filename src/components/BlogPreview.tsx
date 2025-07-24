@@ -4,38 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Calendar, User, ArrowRight, Heart } from "lucide-react";
 
 const BlogPreview = () => {
-  const blogPosts = [
-    {
-      id: 1,
-      title: "Our First 100 Pounds: A Community Milestone",
-      excerpt: "Celebrating a major achievement and the amazing volunteers who made it possible. From humble beginnings to feeding dozens of families...",
-      author: "Harvesting Team",
-      date: "July 15, 2024",
-      category: "Milestone",
-      readTime: "3 min read",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop"
-    },
-    {
-      id: 2,
-      title: "Meet Sarah: A Harvester Making a Difference",
-      excerpt: "Get to know one of our dedicated volunteers who has been with us since day one. Her story will inspire you to join our mission...",
-      author: "Community Team",
-      date: "July 10, 2024",
-      category: "Volunteer Spotlight",
-      readTime: "4 min read",
-      image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=600&h=400&fit=crop"
-    },
-    {
-      id: 3,
-      title: "Summer Garden Tips: Growing More to Share More",
-      excerpt: "Expert advice on maximizing your garden's yield so you can contribute more surplus to our community initiative...",
-      author: "Garden Expert",
-      date: "July 5, 2024",
-      category: "Gardening",
-      readTime: "5 min read",
-      image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=600&h=400&fit=crop"
-    }
-  ];
+  const blogPosts = [];
 
   return (
     <section className="py-16 bg-background">
