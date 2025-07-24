@@ -24,8 +24,8 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <img src={logoIcon} alt="Harvesting Sustainability" className="w-6 h-6" />
+            <div className="w-10 h-10 rounded-lg flex items-center justify-center">
+              <img src="/lovable-uploads/e86dd39c-246f-4895-8e21-4f75e4b98a07.png" alt="Harvesting Sustainability" className="w-10 h-10" />
             </div>
             <div>
               <h1 className="text-lg font-bold text-foreground">Harvesting Sustainability</h1>
