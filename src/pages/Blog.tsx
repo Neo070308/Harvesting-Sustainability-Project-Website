@@ -14,7 +14,7 @@ const Blog = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center mb-12">
             <h1 className="text-4xl font-bold text-foreground mb-6">
-              Our Blog
+              Blog
             </h1>
             <p className="text-xl text-muted-foreground">
               Stories, tips, and updates from the Harvesting Sustainability community.

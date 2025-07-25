@@ -11,44 +11,128 @@ const Team = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h1 className="text-4xl font-bold text-foreground mb-4">Meet Our Team</h1>
+              <h1 className="text-4xl font-bold text-foreground mb-4">The Mobile Harvesters</h1>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Our dedicated volunteer Mobile Harvesters are high school students passionate about 
-                making a positive impact in our community through food sustainability.
+                Meet the dedicated team of high school students who founded and lead the Harvesting Sustainability Project.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
-              <div className="space-y-6">
-                <h2 className="text-2xl font-bold text-foreground">Our Mobile Harvesters</h2>
-                <p className="text-muted-foreground leading-relaxed">
-                  We are a team of high school volunteers who believe in turning backyard surplus into community support. 
-                  Our Mobile Harvesters coordinate with local gardeners, carefully collect excess produce, and deliver 
-                  it to those who need it most.
-                </p>
-                <p className="text-muted-foreground leading-relaxed">
-                  Each volunteer brings their own passion for sustainability and community service, working together 
-                  to create meaningful change one harvest at a time.
-                </p>
-                <div className="bg-gradient-subtle rounded-lg p-6">
-                  <h3 className="text-lg font-semibold text-foreground mb-3">Want to Join Our Team?</h3>
-                  <p className="text-muted-foreground mb-4">
-                    We're always looking for dedicated high school volunteers to join our Mobile Harvester team.
+            {/* Team Members */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+              {/* Ariv Diggi */}
+              <Card className="text-center">
+                <CardContent className="p-8">
+                  <div className="mb-6">
+                    <img
+                      src="https://static.wixstatic.com/media/828f0f_aa7469d99dc74883b942a6a230eff11b~mv2.png/v1/crop/x_0,y_1278,w_4284,h_3157/fill/w_456,h_336,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_2718_HEIC.png"
+                      alt="Ariv Diggi"
+                      className="w-32 h-32 rounded-full object-cover mx-auto shadow-lg"
+                    />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Ariv Diggi</h3>
+                  <p className="text-sm text-muted-foreground mb-4">Founder & Project Leader</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                    Junior at Mountain View High School, student-athlete, and STEM educator. 
+                    Ariv founded this initiative after noticing abundant fruit trees in his neighborhood 
+                    going unharvested while people lack access to fresh food.
+                  </p>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                    When not organizing harvests, you'll find him on the basketball court or teaching 
+                    STEM to elementary students as Chapter President of STEM Together Mountain View.
                   </p>
                   <a
-                    href="/volunteer"
-                    className="inline-block bg-primary text-primary-foreground px-6 py-2 rounded-md hover:bg-primary/90 transition-colors"
+                    href="https://www.instagram.com/ariv_diggi/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm"
                   >
-                    Become a Mobile Harvester
+                    <span>📱</span>
+                    @ariv_diggi
                   </a>
-                </div>
-              </div>
-              <div>
-                <img
-                  src="https://static.wixstatic.com/media/828f0f_27570f671a184f1ebb5931afbeb72291~mv2.jpg/v1/fill/w_347,h_383,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_5431_JPG.jpg"
-                  alt="Mobile Harvesters team in action"
-                  className="w-full rounded-lg shadow-lg"
-                />
+                </CardContent>
+              </Card>
+
+              {/* Connor Kao */}
+              <Card className="text-center">
+                <CardContent className="p-8">
+                  <div className="mb-6">
+                    <img
+                      src="https://static.wixstatic.com/media/828f0f_0823e7121aff4a48bfd1daee7ccec5f1~mv2.jpg/v1/crop/x_0,y_113,w_359,h_265/fill/w_456,h_336,al_c,lg_1,q_80,enc_avif,quality_auto/Screenshot%202025-07-13%20at%209_35_edited.jpg"
+                      alt="Connor Kao"
+                      className="w-32 h-32 rounded-full object-cover mx-auto shadow-lg"
+                    />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Connor Kao</h3>
+                  <p className="text-sm text-muted-foreground mb-4">Creative Director & Operations</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                    Senior at Mountain View High School and passionate creator. Connor brings fresh ideas 
+                    to life through business innovation, murals, and speeches. His love for teamwork 
+                    shines through both soccer and Mobile Harvesters.
+                  </p>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                    His inspiration came from childhood memories of picking persimmons from their backyard 
+                    tree and realizing how to turn waste into purpose.
+                  </p>
+                  <a
+                    href="https://www.instagram.com/connorlkao/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm"
+                  >
+                    <span>📱</span>
+                    @connorlkao
+                  </a>
+                </CardContent>
+              </Card>
+
+              {/* Noah Shahraz */}
+              <Card className="text-center">
+                <CardContent className="p-8">
+                  <div className="mb-6">
+                    <img
+                      src="https://static.wixstatic.com/media/828f0f_b4627b04f58e4dc5ad39d38d07ef7778~mv2.jpg/v1/crop/x_0,y_560,w_2223,h_1638/fill/w_456,h_336,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_8423_edited.jpg"
+                      alt="Noah Shahraz"
+                      className="w-32 h-32 rounded-full object-cover mx-auto shadow-lg"
+                    />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">Noah Shahraz</h3>
+                  <p className="text-sm text-muted-foreground mb-4">Community Outreach & Education</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                    Senior at Mountain View High School and student-athlete. Noah's early memories 
+                    of picking grapefruit with his mom sparked his awareness of food waste and 
+                    the opportunity to build community connections.
+                  </p>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                    Whether on the basketball court, coaching younger players, or tutoring students, 
+                    Noah is always looking for ways to make a lasting impact.
+                  </p>
+                  <a
+                    href="https://www.instagram.com/noah.shahraz/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm"
+                  >
+                    <span>📱</span>
+                    @noah.shahraz
+                  </a>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Join Our Team Section */}
+            <div className="bg-gradient-subtle rounded-xl p-8 mb-16">
+              <div className="text-center max-w-2xl mx-auto">
+                <h3 className="text-2xl font-bold text-foreground mb-4">Want to Join Our Team?</h3>
+                <p className="text-muted-foreground mb-6">
+                  We're always looking for dedicated high school volunteers to join our Mobile Harvester team 
+                  and help us expand our impact in the community.
+                </p>
+                <a
+                  href="/volunteer"
+                  className="inline-block bg-primary text-primary-foreground px-8 py-3 rounded-md hover:bg-primary/90 transition-colors font-medium"
+                >
+                  Become a Mobile Harvester
+                </a>
               </div>
             </div>
 

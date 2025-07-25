@@ -75,10 +75,10 @@ const GetInvolved = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <Badge variant="outline" className="mb-4">
-              Join the Movement
+              Join Us
             </Badge>
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-              Get Involved!
+              Get Involved
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               There are many ways to support our mission. Whether you have produce to share, 
@@ -141,34 +141,13 @@ const GetInvolved = () => {
             })}
           </div>
 
-          {/* Volunteer Roles Section */}
-          <div className="bg-background rounded-xl p-8 shadow-soft">
-            <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold mb-4">Volunteer Opportunities</h3>
-              <p className="text-muted-foreground">
-                Choose a role that fits your schedule and interests
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-              {roles.map((role, index) => {
-                const IconComponent = role.icon;
-                return (
-                  <div key={index} className="text-center p-6 border border-border rounded-lg hover:bg-muted/30 transition-colors">
-                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <IconComponent className="w-6 h-6 text-primary" />
-                    </div>
-                    <h4 className="font-semibold mb-2">{role.title}</h4>
-                    <p className="text-muted-foreground text-sm mb-3">{role.description}</p>
-                    <Badge variant="secondary" className="text-xs">
-                      {role.commitment}
-                    </Badge>
-                  </div>
-                );
-              })}
-            </div>
-
-            <div className="text-center">
+          {/* Call to Action */}
+          <div className="text-center bg-background rounded-xl p-8 shadow-soft">
+            <h3 className="text-2xl font-bold mb-4">Ready to Make a Difference?</h3>
+            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+              Join our team of dedicated volunteers and help us expand our impact in the community.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 variant="cta" 
                 size="lg" 
@@ -178,9 +157,13 @@ const GetInvolved = () => {
                 Apply to Volunteer
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <p className="text-sm text-muted-foreground mt-2">
-                Contact us at mobile.harvesters650@gmail.com
-              </p>
+              <Button 
+                variant="outline" 
+                size="lg"
+                onClick={() => window.location.href = 'mailto:mobile.harvesters650@gmail.com'}
+              >
+                Contact Us
+              </Button>
             </div>
           </div>
         </div>

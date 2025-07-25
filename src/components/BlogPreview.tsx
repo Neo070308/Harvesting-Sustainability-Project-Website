@@ -15,7 +15,7 @@ const BlogPreview = () => {
               Latest Updates
             </Badge>
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
-              From Our Blog
+              Latest Stories
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Stay updated with our latest impact stories, volunteer spotlights, and community news. 
