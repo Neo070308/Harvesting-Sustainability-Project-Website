@@ -59,6 +59,7 @@ const Hero = () => {
               variant="outline" 
               size="xl"
               className="bg-white/10 border-white/30 text-white hover:bg-white/20 backdrop-blur-sm"
+              onClick={() => window.location.href = '/about'}
             >
               Learn More
             </Button>
@@ -78,8 +79,8 @@ const Hero = () => {
               <div className="flex items-center justify-center w-12 h-12 bg-orange-500 rounded-full mx-auto mb-4">
                 <Users className="w-6 h-6 text-white" />
               </div>
-              <div className="text-2xl font-bold text-white mb-2">25+</div>
-              <div className="text-white/80 text-sm">Volunteer Harvesters</div>
+              <div className="text-2xl font-bold text-white mb-2">12+</div>
+              <div className="text-white/80 text-sm">Families Served</div>
             </div>
             
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">

@@ -32,13 +32,13 @@ const Team = () => {
                   <h3 className="text-xl font-semibold mb-2">Ariv Diggi</h3>
                   <p className="text-sm text-muted-foreground mb-4">Founder & Project Leader</p>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                    Junior at Mountain View High School, student-athlete, and STEM educator. 
-                    Ariv founded this initiative after noticing abundant fruit trees in his neighborhood 
-                    going unharvested while people lack access to fresh food.
+                    Hi! I'm Ariv Diggi, a student-athlete finishing my junior year at Mountain View High School. This initiative started with something simple: walking through my neighborhood and noticing fruit trees overflowing with oranges, tomatoes, and lemons, left untouched. As someone who also gardens, I know how often we end up with more produce than we can use. At the same time, through my nonprofit delivering care packages to unhoused individuals in San Francisco, I've seen how many people lack access to fresh, healthy food.
                   </p>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                    When not organizing harvests, you'll find him on the basketball court or teaching 
-                    STEM to elementary students as Chapter President of STEM Together Mountain View.
+                    That gap sparked an idea: what if we could collect the extra fruits and vegetables growing in our backyards and deliver them to those in need?
+                  </p>
+                  <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                    I've always enjoyed helping others—whether it's distributing care packages, or teaching STEM to elementary schoolers through STEM Together, the Mountain View chapter of the national STEM For Others organization, where I serve as Chapter President. When I'm not organizing produce pickups or designing lesson plans, you'll probably find me on the basketball court or working on another idea to make a difference.
                   </p>
                   <a
                     href="https://www.instagram.com/ariv_diggi/"
@@ -65,13 +65,7 @@ const Team = () => {
                   <h3 className="text-xl font-semibold mb-2">Connor Kao</h3>
                   <p className="text-sm text-muted-foreground mb-4">Creative Director & Operations</p>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                    Senior at Mountain View High School and passionate creator. Connor brings fresh ideas 
-                    to life through business innovation, murals, and speeches. His love for teamwork 
-                    shines through both soccer and Mobile Harvesters.
-                  </p>
-                  <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                    His inspiration came from childhood memories of picking persimmons from their backyard 
-                    tree and realizing how to turn waste into purpose.
+                    Hi, I'm Connor Kao — a senior and student-athlete at Mountain View High School. At heart, I'm a creator. Whether it's launching new business ideas, painting murals, or writing speeches, I love bringing ideas to life. As a passionate soccer player and all-around sports enthusiast, I thrive on teamwork, energy, and purpose. One of my favorite childhood memories is picking persimmons from the huge tree in our backyard every fall. We'd bag them up and give them to anyone who'd take them — friends, neighbors, coworkers, and any other persimmon lovers we knew! Like many other families in our community, we often couldn't keep up with the rapid ripening of persimmons each year, and that's when I realized I could turn this waste problem into a purpose.
                   </p>
                   <a
                     href="https://www.instagram.com/connorlkao/"
@@ -98,13 +92,10 @@ const Team = () => {
                   <h3 className="text-xl font-semibold mb-2">Noah Shahraz</h3>
                   <p className="text-sm text-muted-foreground mb-4">Community Outreach & Education</p>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                    Senior at Mountain View High School and student-athlete. Noah's early memories 
-                    of picking grapefruit with his mom sparked his awareness of food waste and 
-                    the opportunity to build community connections.
+                    Hi! I'm Noah Shahraz, a senior and student-athlete at Mountain View High School. Some of my earliest memories are of picking grapefruit with my mom in our backyard — a small tradition that made me notice how much fresh fruit often goes to waste in our community. Joining Mobile Harvesters wasn't just about cutting down on that waste — it was about building something bigger. Something that brings people together, creates connections, and makes a real difference.
                   </p>
                   <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                    Whether on the basketball court, coaching younger players, or tutoring students, 
-                    Noah is always looking for ways to make a lasting impact.
+                    Whether I'm on the basketball court, coaching younger players, or tutoring other students, I'm always looking for ways to take on challenges and make a difference. I'm proud to be part of a team that's turning local action into lasting impact.
                   </p>
                   <a
                     href="https://www.instagram.com/noah.shahraz/"

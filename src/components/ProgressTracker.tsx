@@ -83,13 +83,28 @@ const ProgressTracker = () => {
                 Every harvest brings us closer to our summer target. Join the movement today!
               </p>
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                <Badge variant="secondary" className="text-sm">
+                <Badge 
+                  variant="secondary" 
+                  className="text-sm cursor-pointer hover:bg-secondary/80 transition-colors"
+                  onClick={() => {
+                    const formSection = document.getElementById('harvest-form');
+                    formSection?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                >
                   🥕 Schedule a Harvest
                 </Badge>
-                <Badge variant="secondary" className="text-sm">
+                <Badge 
+                  variant="secondary" 
+                  className="text-sm cursor-pointer hover:bg-secondary/80 transition-colors"
+                  onClick={() => window.location.href = '/get-involved'}
+                >
                   🤝 Become a Volunteer
                 </Badge>
-                <Badge variant="secondary" className="text-sm">
+                <Badge 
+                  variant="secondary" 
+                  className="text-sm cursor-pointer hover:bg-secondary/80 transition-colors"
+                  onClick={() => window.open('https://www.canva.com/design/DAGp-8Tn1tA/8bEEja8tZfz74qWEa-OcVg/view?utm_content=DAGp-8Tn1tA&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb155b785fe', '_blank')}
+                >
                   📢 Spread the Word
                 </Badge>
               </div>

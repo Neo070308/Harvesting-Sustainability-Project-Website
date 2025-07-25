@@ -55,7 +55,12 @@ const Mission = () => {
         </div>
 
         <div className="text-center">
-          <Button variant="default" size="lg" className="group">
+          <Button 
+            variant="default" 
+            size="lg" 
+            className="group"
+            onClick={() => window.location.href = '/about'}
+          >
             Learn More About Our Impact
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Button>
