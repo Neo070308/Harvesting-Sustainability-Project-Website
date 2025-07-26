@@ -1,7 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mail, Users, Heart, Leaf } from "lucide-react";
+import { Mail, Users, Heart, Leaf, Instagram } from "lucide-react";
 
 const Team = () => {
   return (
@@ -46,7 +46,7 @@ const Team = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm"
                   >
-                    <span>📱</span>
+                    <Instagram className="w-4 h-4" />
                     @ariv_diggi
                   </a>
                 </CardContent>
@@ -73,7 +73,7 @@ const Team = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm"
                   >
-                    <span>📱</span>
+                    <Instagram className="w-4 h-4" />
                     @connorlkao
                   </a>
                 </CardContent>
@@ -103,7 +103,7 @@ const Team = () => {
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors text-sm"
                   >
-                    <span>📱</span>
+                    <Instagram className="w-4 h-4" />
                     @noah.shahraz
                   </a>
                 </CardContent>
@@ -184,7 +184,7 @@ const Team = () => {
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors font-medium"
                 >
-                  <span>📱</span>
+                  <Instagram className="w-5 h-5" />
                   @mobile.harvesters
                 </a>
               </div>

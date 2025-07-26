@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Heart, Users, Leaf } from "lucide-react";
+import { ArrowDown, Heart, Users, Leaf, Instagram } from "lucide-react";
 import heroImage from "@/assets/hero-harvest.jpg";
 
 const Hero = () => {
@@ -66,6 +66,22 @@ const Hero = () => {
             >
               Learn More
             </Button>
+          </div>
+
+          {/* Follow Us Section */}
+          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 max-w-md mx-auto mb-8">
+            <div className="text-center">
+              <p className="text-white/90 text-sm mb-3">Follow our journey</p>
+              <a
+                href="https://www.instagram.com/mobile.harvesters/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-white/20 hover:bg-white/30 transition-colors rounded-full px-4 py-2 text-white font-medium"
+              >
+                <Instagram className="w-5 h-5" />
+                @mobile.harvesters
+              </a>
+            </div>
           </div>
 
           {/* Impact Stats */}
