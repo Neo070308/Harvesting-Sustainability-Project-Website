@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Heart, Users, Leaf, Instagram, Facebook, Home } from "lucide-react";
+import { ArrowDown, Heart, Users, Leaf } from "lucide-react";
 import heroImage from "@/assets/hero-harvest.jpg";
 
 const Hero = () => {
@@ -66,42 +66,6 @@ const Hero = () => {
             >
               Learn More
             </Button>
-          </div>
-
-          {/* Follow Our Socials Section */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 max-w-lg mx-auto mb-8">
-            <div className="text-center">
-              <p className="text-white/90 text-sm mb-4">Follow our journey</p>
-              <div className="flex flex-wrap justify-center gap-3">
-                <a
-                  href="https://www.instagram.com/mobile.harvesters/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-white/20 hover:bg-white/30 transition-colors rounded-full px-4 py-2 text-white font-medium text-sm"
-                >
-                  <Instagram className="w-4 h-4" />
-                  Instagram
-                </a>
-                <a
-                  href="https://www.facebook.com/profile.php?id=61577121942246"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-white/20 hover:bg-white/30 transition-colors rounded-full px-4 py-2 text-white font-medium text-sm"
-                >
-                  <Facebook className="w-4 h-4" />
-                  Facebook
-                </a>
-                <a
-                  href="https://nextdoor.com/business-profile/preview/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-white/20 hover:bg-white/30 transition-colors rounded-full px-4 py-2 text-white font-medium text-sm"
-                >
-                  <Home className="w-4 h-4" />
-                  Nextdoor
-                </a>
-              </div>
-            </div>
           </div>
 
           {/* Impact Stats */}

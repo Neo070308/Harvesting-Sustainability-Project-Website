@@ -6,6 +6,7 @@ import ProgressTracker from "@/components/ProgressTracker";
 import HarvestForm from "@/components/HarvestForm";
 import GetInvolved from "@/components/GetInvolved";
 import Testimonials from "@/components/Testimonials";
+import SocialMedia from "@/components/SocialMedia";
 import BlogPreview from "@/components/BlogPreview";
 import Footer from "@/components/Footer";
 
@@ -21,6 +22,7 @@ const Index = () => {
         <HarvestForm />
         <GetInvolved />
         <Testimonials />
+        <SocialMedia />
         <BlogPreview />
       </main>
       <Footer />
