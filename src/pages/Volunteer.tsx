@@ -63,7 +63,6 @@ const Volunteer = () => {
         </div>
         
         <VolunteerForm />
-        <GetInvolved />
       </main>
       <Footer />
     </div>

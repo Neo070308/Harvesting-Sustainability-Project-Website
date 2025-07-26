@@ -59,7 +59,10 @@ const Hero = () => {
               variant="outline" 
               size="xl"
               className="bg-white/10 border-white/30 text-white hover:bg-white/20 backdrop-blur-sm"
-              onClick={() => window.location.href = '/about'}
+              onClick={() => {
+                const howItWorksSection = document.getElementById('how-it-works');
+                howItWorksSection?.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               Learn More
             </Button>

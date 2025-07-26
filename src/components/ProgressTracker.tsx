@@ -96,7 +96,7 @@ const ProgressTracker = () => {
                 <Badge 
                   variant="secondary" 
                   className="text-sm cursor-pointer hover:bg-secondary/80 transition-colors"
-                  onClick={() => window.location.href = '/get-involved'}
+                  onClick={() => window.location.href = '/volunteer'}
                 >
                   🤝 Become a Volunteer
                 </Badge>
