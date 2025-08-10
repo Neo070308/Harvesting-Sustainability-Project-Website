@@ -1,12 +1,39 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Heart, Users, Leaf } from "lucide-react";
+import { ArrowDown, Heart, Users, Leaf, Newspaper } from "lucide-react";
 import heroImage from "@/assets/hero-harvest.jpg";
+import { useEffect } from "react";
+import confetti from "canvas-confetti";
 
 const Hero = () => {
   const scrollToForm = () => {
     const formSection = document.getElementById('harvest-form');
     formSection?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  // Confetti celebration on first visit (once per session)
+  useEffect(() => {
+    const shown = sessionStorage.getItem("confettiShown");
+    if (shown) return;
+    const duration = 2000;
+    const end = Date.now() + duration;
+
+    const frame = () => {
+      confetti({
+        particleCount: 3,
+        angle: 90,
+        spread: 75,
+        origin: { x: Math.random() * 0.4 + 0.3, y: 0 },
+        drift: 0,
+        gravity: 1.2,
+        ticks: 200,
+      });
+      if (Date.now() < end) {
+        requestAnimationFrame(frame);
+      }
+    };
+    frame();
+    sessionStorage.setItem("confettiShown", "1");
+  }, []);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -39,10 +66,22 @@ const Hero = () => {
           </h1>
 
           {/* Subtitle */}
-          <p className="text-xl sm:text-2xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl sm:text-2xl text-white/90 mb-6 max-w-3xl mx-auto leading-relaxed">
             Reducing food waste, building stronger communities, and delivering fresh, 
             homegrown produce to those in need—one harvest at a time.
           </p>
+
+          {/* Press Badge */}
+          <a
+            href="https://www.losaltosonline.com/schools/los-altos-teens-reducing-food-waste-by-collecting-produce-for-hope-s-corner/article_4fc53a04-011d-4a0a-a7e4-d9ed0e0b79b9.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-white/15 hover:bg-white/20 transition-colors backdrop-blur-sm rounded-full px-3 py-1 text-white/90 text-xs font-medium mb-8"
+            aria-label="Read our feature in the Los Altos Town Crier"
+          >
+            <Newspaper className="w-4 h-4" />
+            Featured by Los Altos Town Crier
+          </a>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">

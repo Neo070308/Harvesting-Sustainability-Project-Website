@@ -7,6 +7,7 @@ import HarvestForm from "@/components/HarvestForm";
 import GetInvolved from "@/components/GetInvolved";
 import Testimonials from "@/components/Testimonials";
 import SocialMedia from "@/components/SocialMedia";
+import InTheNews from "@/components/InTheNews";
 import BlogPreview from "@/components/BlogPreview";
 import Footer from "@/components/Footer";
 
@@ -23,6 +24,7 @@ const Index = () => {
         <GetInvolved />
         <Testimonials />
         <SocialMedia />
+        <InTheNews />
         <BlogPreview />
       </main>
       <Footer />
