@@ -71,17 +71,6 @@ const Hero = () => {
             homegrown produce to those in need—one harvest at a time.
           </p>
 
-          {/* Press Badge */}
-          <a
-            href="https://www.losaltosonline.com/schools/los-altos-teens-reducing-food-waste-by-collecting-produce-for-hope-s-corner/article_4fc53a04-011d-4a0a-a7e4-d9ed0e0b79b9.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-white/15 hover:bg-white/20 transition-colors backdrop-blur-sm rounded-full px-3 py-1 text-white/90 text-xs font-medium mb-8"
-            aria-label="Read our feature in the Los Altos Town Crier"
-          >
-            <Newspaper className="w-4 h-4" />
-            Featured by Los Altos Town Crier
-          </a>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
