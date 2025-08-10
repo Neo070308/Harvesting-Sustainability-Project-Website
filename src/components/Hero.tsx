@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Heart, Users, Leaf, Newspaper } from "lucide-react";
+import { ArrowDown, Heart, Leaf, Newspaper } from "lucide-react";
 import heroImage from "@/assets/hero-harvest.jpg";
 import { useEffect } from "react";
 import confetti from "canvas-confetti";
@@ -117,13 +117,21 @@ const Hero = () => {
               <div className="text-white/80 text-sm">Fresh Produce Donated</div>
             </div>
             
-            <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
-              <div className="flex items-center justify-center w-12 h-12 bg-orange-500 rounded-full mx-auto mb-4">
-                <Users className="w-6 h-6 text-white" />
+            <a
+              href="https://www.losaltosonline.com/schools/los-altos-teens-reducing-food-waste-by-collecting-produce-for-hope-s-corner/article_4fc53a04-011d-4a0a-a7e4-d9ed0e0b79b9.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Read our feature in the Los Altos Town Crier"
+              className="block rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-white/50"
+            >
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-colors">
+                <div className="flex items-center justify-center w-12 h-12 bg-blue-500 rounded-full mx-auto mb-4">
+                  <Newspaper className="w-6 h-6 text-white" />
+                </div>
+                <div className="text-2xl font-bold text-white mb-2 text-center">Featured</div>
+                <div className="text-white/80 text-sm text-center">Los Altos Town Crier</div>
               </div>
-              <div className="text-2xl font-bold text-white mb-2">12+</div>
-              <div className="text-white/80 text-sm">Families Served</div>
-            </div>
+            </a>
             
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
               <div className="flex items-center justify-center w-12 h-12 bg-yellow-500 rounded-full mx-auto mb-4">
