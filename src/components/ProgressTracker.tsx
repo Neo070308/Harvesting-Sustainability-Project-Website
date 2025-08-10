@@ -7,7 +7,7 @@ const ProgressTracker = () => {
   const currentDonated = 1078;
   const goal = 1000;
   const progressPercentage = (currentDonated / goal) * 100;
-  const remaining = goal - currentDonated;
+  const remaining = Math.max(goal - currentDonated, 0);
 
   return (
     <section className="py-16 bg-muted/30">
