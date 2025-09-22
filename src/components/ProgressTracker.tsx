@@ -29,7 +29,7 @@ const ProgressTracker = () => {
             <CardHeader className="text-center pb-4">
               <div className="flex items-center justify-center gap-2 mb-2">
                 <Trophy className="w-6 h-6 text-accent" />
-                <CardTitle className="text-2xl">Summer 2024 Goal</CardTitle>
+                <CardTitle className="text-2xl">Summer 2025 Goal</CardTitle>
               </div>
             </CardHeader>
             <CardContent className="space-y-6">
