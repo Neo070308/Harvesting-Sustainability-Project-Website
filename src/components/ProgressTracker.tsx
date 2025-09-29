@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Trophy, TrendingUp, Calendar } from "lucide-react";
 
 const ProgressTracker = () => {
-  const currentDonated = 1729;
+  const currentDonated = 1844;
   const goal = 2000;
   const progressPercentage = (currentDonated / goal) * 100;
   const remaining = Math.max(goal - currentDonated, 0);
