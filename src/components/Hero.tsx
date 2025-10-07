@@ -102,7 +102,7 @@ const Hero = () => {
               <div className="flex items-center justify-center w-12 h-12 bg-green-500 rounded-full mx-auto mb-4">
                 <Heart className="w-6 h-6 text-white" />
               </div>
-              <div className="text-2xl font-bold text-white mb-2">1844 lbs</div>
+              <div className="text-2xl font-bold text-white mb-2">2009 lbs</div>
               <div className="text-white/80 text-sm">Fresh Produce Donated</div>
             </div>
             
